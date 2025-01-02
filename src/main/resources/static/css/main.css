@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    font-family: "Noto Sans", "Noto Sans KR", serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 430px;
+    margin: 0 auto;
+}
+
+.container{
+    background-color: #655042;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height:36px;
+    color: #FDF7F4;
+    box-shadow: 0 4px 4px rgba(56,54,54, 25%);
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    justify-content: space-evenly;
+    font-size: 12px;
+    background-color: #655042;
+}
+
+.main-intro{
+    display: flex;
+    text-align: center;
+    width: 390px;
+    margin: 30px 20px;
+    height: 230px;
+    background-image: url(../images/main/intro_bg.png);
+    background-repeat: no-repeat;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #FDF7F4;
+}
+
+.main-intro > h2, .main-function > h2{
+    font-size: 16px;
+}
+
+.main-intro > p, .main-function > p{
+    font-size: 11px;
+}
+
+.main-logo{
+    color: #FDF7F4;
+    text-align: center;
+    margin: 55px;
+    font-size: 48px;
+}
+
+.main-function{
+    background-image: url(../images/main/function_bg.png);
+    background-repeat: no-repeat;
+    width: 390px;
+    margin: 30px 20px;
+    height: 230px;
+    color: #FDF7F4;
+}

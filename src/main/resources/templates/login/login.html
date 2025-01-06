@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html><!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/login.css}">
+    <title>메인페이지</title>
+</head>
+<body>
+<div class="container">
+    <header>
+        <p>TripDiary</p>
+        <ul>
+            <li>소식</li>
+            <li>커뮤티니</li>
+            <li>나의 여행</li>
+            <li>마이페이지</li>
+            <li><a href="#">로그인</a></li>
+        </ul>
+    </header>
+
+    <div>
+        <h1 class="main-logo">로고</h1>
+
+        <form action="#" method="post">
+            <div class="login_box">
+                <div class="loginText">
+                    <input type="text" name="user_id" placeholder="아이디" required><br>
+                    <input type="password" name="pwd" placeholder="비밀번호" required><br>
+                </div>
+                <div class="loginBtn">
+                    <input type="submit" class="login_btn" value="로그인">
+                </div>
+                <div class="find-join">
+                    <a href="#">아이디 찾기</a>
+                    <a href="#">비밀번호 찾기</a>
+                    <a href="#">회원 가입</a>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+    <footer>
+
+    </footer>
+</div>
+</body>
+</html>

@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 import java.sql.Date;
 
 @Component("loginDTO")
-public class loginDTO {
+public class LoginDTO {
 
     private Long user_id;
     private String name;
@@ -17,7 +17,7 @@ public class loginDTO {
     private Role role;
     private char user_stateus;
 
-    public loginDTO() {
+    public LoginDTO() {
 
     }
 
@@ -25,7 +25,7 @@ public class loginDTO {
         일반, 관리자
     }
 
-    public loginDTO(Long user_id, String name, String nickname, String id, String password, String email, Date birth, Role role, char user_stateus) {
+    public LoginDTO(Long user_id, String name, String nickname, String id, String password, String email, Date birth, Role role, char user_stateus) {
         this.user_id = user_id;
         this.name = name;
         this.nickname = nickname;

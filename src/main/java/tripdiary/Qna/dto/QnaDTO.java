@@ -1,4 +1,4 @@
-package tripdiary.Qna.entity;
+package tripdiary.Qna.dto;
 
 import lombok.Data;
 
@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 @Entity
 @Data
 @Table(name = "qna_question")
-public class QnaList {
+public class QnaDTO {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -89,3 +89,8 @@ header > ul > li {
     height: 230px;
     color: #FDF7F4;
 }
+
+.login_link {
+    text-decoration: none;
+    color: #FDF7F4;
+}

@@ -1,11 +1,10 @@
-package tripdiary.com.login.dto;
+package tripdiary.com.login.vo;
 
 import org.springframework.stereotype.Component;
 
 import java.sql.Date;
 
-@Component("loginDTO")
-public class LoginDTO {
+public class LoginVO {
 
     private Long user_id;
     private String name;
@@ -17,7 +16,7 @@ public class LoginDTO {
     private Role role;
     private char user_stateus;
 
-    public LoginDTO() {
+    public LoginVO() {
 
     }
 
@@ -25,7 +24,7 @@ public class LoginDTO {
         일반, 관리자
     }
 
-    public LoginDTO(Long user_id, String name, String nickname, String id, String password, String email, Date birth, Role role, char user_stateus) {
+    public LoginVO(Long user_id, String name, String nickname, String id, String password, String email, Date birth, Role role, char user_stateus) {
         this.user_id = user_id;
         this.name = name;
         this.nickname = nickname;

@@ -22,13 +22,34 @@ header {
     box-shadow: 0 4px 4px rgba(56,54,54, 25%);
 }
 
-header ul {
+header > ul {
+    padding-left: 5px;
+    height: 20px;
     display: flex;
     list-style: none;
     gap: 20px;
     justify-content: space-evenly;
     font-size: 12px;
     background-color: #655042;
+}
+
+header > ul > li {
+    text-align: center;
+}
+
+.header_lists {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    gap: 6px;
+    list-style: none;
+    padding: 0;
+}
+
+.header_lists a {
+    text-decoration: none;
+    color: #000000;
 }
 
 .main-intro{

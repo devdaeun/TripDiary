@@ -1,8 +1,8 @@
 package tripdiary.com.login.service;
 
-import tripdiary.com.login.dto.LoginDTO;
+import tripdiary.com.login.vo.LoginVO;
 
 public interface LoginService {
 
-    public void addUser(LoginDTO loginDTO) throws Exception;
+    public void addUser(LoginVO loginVO) throws Exception;
 }

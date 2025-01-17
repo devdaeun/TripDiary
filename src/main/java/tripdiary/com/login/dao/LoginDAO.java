@@ -1,11 +1,11 @@
 package tripdiary.com.login.dao;
 
-import org.apache.ibatis.annotations.Mapper;
+import org.egovframe.rte.psl.dataaccess.mapper.Mapper;
 import org.springframework.dao.DataAccessException;
-import tripdiary.com.login.dto.LoginDTO;
+import tripdiary.com.login.vo.LoginVO;
+@Mapper("loginDAO")
+public class LoginDAO {
+    public void insertLogin(LoginVO loginVO) throws DataAccessException{
 
-@Mapper
-public interface LoginDAO {
-
-    public void insertLogin(LoginDTO loginDTO) throws DataAccessException;
+    };
 }

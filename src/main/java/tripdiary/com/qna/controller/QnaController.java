@@ -1,4 +1,4 @@
-package tripdiary.Qna.controller;
+package tripdiary.com.qna.controller;
 
 import org.springframework.stereotype.Controller;
 

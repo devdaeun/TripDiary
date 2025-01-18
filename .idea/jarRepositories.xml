@@ -12,14 +12,14 @@
       <option name="url" value="https://maven.egovframe.go.kr/maven/" />
     </remote-repository>
     <remote-repository>
-      <option name="id" value="mvn2s" />
-      <option name="name" value="mvn2s" />
-      <option name="url" value="https://repo1.maven.org/maven2/" />
-    </remote-repository>
-    <remote-repository>
       <option name="id" value="oracle-repo" />
       <option name="name" value="oracle-repo" />
       <option name="url" value="https://maven.oracle.com" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="mvn2s" />
+      <option name="name" value="mvn2s" />
+      <option name="url" value="https://repo1.maven.org/maven2/" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="central" />

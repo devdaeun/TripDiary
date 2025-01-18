@@ -10,4 +10,6 @@ public class TripPlanController {
     public String tripPlan(){
         return "trip/trip_plan";
     }
+
+
 }

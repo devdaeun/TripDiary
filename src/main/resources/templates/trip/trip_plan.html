@@ -10,36 +10,46 @@
     <title>여행 계획 세우기</title>
 </head>
 <body>
-    <header>
-        <p>TripDiary</p>
-        <ul>
-            <li>
-                <label>소식</label>
-                <ul class="header_lists">
-                    <li><a href="#">공지사항</a></li>
-                    <li><a href="#">Qna</a></li>
-                    <li><a href="#">이벤트</a></li>
-                </ul>
+    <div class="container">
+        <header>
+            <p>TripDiary</p>
+            <ul>
+                <li>
+                    <label>소식</label>
+                    <ul class="header_lists">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">Qna</a></li>
+                        <li><a href="#">이벤트</a></li>
+                    </ul>
 
-            </li>
-            <li>커뮤티니</li>
-            <li>
-                <label>나의 여행</label>
-                <ul class="header_lists">
-                    <li><a href="#">계획 세우기</a></li>
-                    <li><a href="#">기록 남기기</a></li>
-                </ul>
-            </li>
-            <li>
-                <label>마이페이지</label>
-                <ul class="header_lists">
-                    <li><a href="#">마이 페이지</a></li>
-                    <li><a href="#">마이 월드</a></li>
-                    <li><a href="#">설정</a></li>
-                </ul>
-            </li>
-            <li><a href="#" class="login_link">로그인</a></li>
-        </ul>
-    </header>
+                </li>
+                <li>커뮤티니</li>
+                <li>
+                    <label>나의 여행</label>
+                    <ul class="header_lists">
+                        <li><a th:href="@{/tripdiary/plan}">계획 세우기</a></li>
+                        <li><a href="#">기록 남기기</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <label>마이페이지</label>
+                    <ul class="header_lists">
+                        <li><a href="#">마이 페이지</a></li>
+                        <li><a href="#">마이 월드</a></li>
+                        <li><a href="#">설정</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="login_link">로그인</a></li>
+            </ul>
+        </header>
+
+        <footer>
+
+        </footer>
+        <div>
+            <h3>TRAVEL LOG</h3>
+            <a>로그인</a>
+        </div>
+    </div>
 </body>
 </html>

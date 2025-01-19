@@ -1,0 +1,9 @@
+.area {
+    background-color: gray;
+    border: 0;
+    padding: 5px 10px;
+}
+
+.area:active{
+    background-color: green;
+}

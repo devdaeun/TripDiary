@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/trip/tripplan.css}">
     <title>여행 계획 세우기</title>
 </head>
 <body>
@@ -21,7 +22,6 @@
                         <li><a href="#">Qna</a></li>
                         <li><a href="#">이벤트</a></li>
                     </ul>
-
                 </li>
                 <li>커뮤티니</li>
                 <li>
@@ -42,7 +42,17 @@
                 <li><a href="#" class="login_link">로그인</a></li>
             </ul>
         </header>
+        <div>
+            <h1>이번 여행 계획은?</h1>
+            <button value="국내" class="area">국내</button>
+            <button value="해외" class="area">해외</button>
+            <input name="trip_area" value="">
+            <form action="createPlan.do" method="post">
 
+                <label></label>
+                <input name="">
+            </form>
+        </div>
         <footer>
 
         </footer>

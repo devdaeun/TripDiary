@@ -6,14 +6,16 @@ import org.springframework.stereotype.Service;
 import tripdiary.com.login.dao.LoginDAO;
 import tripdiary.com.login.vo.LoginVO;
 
-@Service("loginService")
-public class LoginServiceImpl extends EgovAbstractServiceImpl implements LoginService {
+import javax.annotation.Resource;
 
-    @Autowired
-    private LoginDAO loginDAO;
+@Service("loginService")
+public class LoginServiceImpl implements LoginService {
+
+    @Resource(name="loginDAO")
+    public LoginDAO loginDAO;
 
     @Override
-    public void addUser(LoginVO loginVO) throws Exception {
-        loginDAO.insertLogin(loginVO);
+    public int insertMember(LoginVO vo) throws Exception {
+        return loginDAO.insertMember(vo);
     }
 }

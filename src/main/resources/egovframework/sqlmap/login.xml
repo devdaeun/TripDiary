@@ -2,6 +2,20 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper>
+<mapper namespace="loginDAO">
+    <resultMap id="loginResultMap" type="loginVO">
+        <result property="user_id" column="user_id"/>
+        <result property="name" column="name"/>
+        <result property="nikname" column="nikname"/>
+        <result property="id" column="id"/>
+        <result property="password" column="password"/>
+        <result property="email" column="email"/>
+        <result property="birth" column="birth"/>
+        <result property="role" column="role"/>
+        <result property="user_stateus" column="user_stateus"/>
+    </resultMap>
 
+    <insert id="loginDAO.insertMember" parameterType="loginVO">
+        insert into users values(#{id}, #{name}, #{password}, #{email}, #{birth})
+    </insert>
 </mapper>

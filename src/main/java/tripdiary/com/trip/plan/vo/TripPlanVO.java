@@ -11,7 +11,7 @@ import java.sql.Timestamp;
 public class TripPlanVO {
     private int plan_id;
     private int user_id;
-    private String tripa_area;
+    private String trip_area;
     private String trip_location;
     private String plan_weather;
     private Date start_at;
@@ -22,9 +22,9 @@ public class TripPlanVO {
     private char secret;
     private int secret_code;
 
-    public TripPlanVO(char secret, String tripa_area) {
+    public TripPlanVO(char secret, String trip_area) {
         this.secret = 0;
-        this.tripa_area = "국내";
+        this.trip_area = "국내";
     }
 
 }

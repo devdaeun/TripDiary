@@ -6,8 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}">
-    <link rel="stylesheet" type="text/css" th:href="@{/css/trip/tripplan.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/main.css?after}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/trip/tripplan.css?after}">
     <title>여행 계획 세우기</title>
 </head>
 <body>
@@ -42,16 +42,46 @@
                 <li><a href="#" class="login_link">로그인</a></li>
             </ul>
         </header>
-        <div>
-            <h1>이번 여행 계획은?</h1>
-            <button value="국내" class="area">국내</button>
-            <button value="해외" class="area">해외</button>
-            <input name="trip_area" value="">
+        <div class="plan_area">
             <form action="createPlan.do" method="post">
-
-                <label></label>
-                <input name="">
+                <div class="area_plan">
+                    <h1>이번 여행 계획은?</h1>
+                    <span class="areas">
+                        <button value="국내" class="area">국내</button>
+                        <button value="해외" class="area">해외</button>
+                    </span>
+                </div>
+                <input name="trip_area" value="" type="hidden">
+                <div class="date_plan">
+                    <label>여행기간</label>
+                    <img th:src="@{/images/trip/calendar.svg}" width="24" height="24">
+                    <!-- 이미지 누르면 나오게하고싶픔-->
+                </div>
+                <div class="plan_box">
+                    <div>
+                        <img th:src="@{/images/trip/weather.svg}" width="24" height="24">
+                        <span>
+                            <label>장소선택</label>
+                            <img th:src="@{/images/trip/map.svg}" width="24" height="24">
+                        </span>
+                    </div>
+                    <div>
+                        <label>시간</label>
+                        <input name="">
+                    </div>
+                    <div>
+                        <label>메모</label>
+                        <textarea></textarea>
+                    </div>
+                </div>
+                <div class="plan_adder">
+                    <button>계획 추가하기</button>
+                    <img th:src="@{/images/trip/add.svg}" width="24" height="24">
+                </div>
+                <button type="submit">저장</button>
+                <a href="#">목록</a>
             </form>
+
         </div>
         <footer>
 

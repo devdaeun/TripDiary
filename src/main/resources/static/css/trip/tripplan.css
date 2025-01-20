@@ -1,9 +1,84 @@
+.plan_area {
+    padding-top: 80px;
+    color: #1C1816;
+}
+
 .area {
-    background-color: gray;
+    background-color: #655042;
     border: 0;
-    padding: 5px 10px;
+    padding: 5px 8px;
+    margin: 0;
+    color: #FDF7F4;
+    font-weight: 500;
 }
 
 .area:active{
-    background-color: green;
+    background-color: #453830;
+}
+
+.container{
+    background-color:#FDF7F4;
+}
+
+header {
+    color:#655042;
+}
+
+.plan_box {
+    background-color: #FFFEFD;
+    border: 2px solid #BEA99B;
+    padding: 30px 20px;
+    width: 300px;
+    margin: 15px auto;
+    color: #655042;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+h1 {
+    font-size: 17px;
+}
+
+.area_plan {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.areas{
+    display: flex;
+}
+
+.date_plan {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.date_plan > img {
+    margin-top: 2px;
+}
+
+.plan_adder{
+    display: flex;
+    border: 2px solid #BEA99B;
+    width: 200px;
+    margin: 0 auto;
+    height: 50px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.plan_adder > button {
+    background-color: inherit;
+    border: none;
+    color: #BEA99B;
+    font-weight: 600;
+    font-size: 14px;
 }

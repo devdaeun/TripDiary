@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    font-family: "Noto Sans", "Noto Sans KR", serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 430px;
+    margin: 0 auto;
+}
+
+.container{
+    background-color: #FDF7F4;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height:36px;
+    color: #FDF7F4;
+    box-shadow: 0 4px 4px rgba(56,54,54, 25%);
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    justify-content: space-evenly;
+    font-size: 12px;
+    background-color: #655042;
+}
+
+.main-logo{
+    color: #655042;
+    text-align: center;
+    margin: 55px;
+    font-size: 48px;
+}
